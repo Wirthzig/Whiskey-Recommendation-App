@@ -1,0 +1,39 @@
+shop_id,location,type,date,discount
+1,Maastricht,Standard,,
+2,Amsterdam,Standard,,
+3,Rotterdam,Standard,,
+4,Utrecht,Standard,,
+5,Eindhoven,Standard,,
+6,Cologne,Pop-up,2022-02-25,5.0
+7,Aachen,Pop-up,2022-02-10,15.0
+8,Brussels,Standard,,
+9,Warsaw,Standard,,
+10,Liege,Pop-up,2022-03-14,10.0
+11,Berlin,Standard,,
+12,Paris,Standard,,
+13,Alkamaar,Pop-up,2022-04-20,15.0
+14,Maarheeze,Pop-up,2022-06-22,7.5
+15,Dusseldorf,Standard,,
+16,Breda,Standard,,
+17,Brugia,Standard,,
+18,Dunkirk,Standard,,
+19,Munich,Standard,,
+20,Frankurt,Standard,,
+21,Cracow,Standard,,
+22,Wroclaw,Standard,,
+23,Szczecin,Standard,,
+24,Dresden,Pop-up,2022-09-01,20.0
+25,Hamburg,Standard,,
+26,London,Pop-up,2022-09-07,5.0
+27,Manchaster,Pop-up,2022-11-11,10.0
+28,Doncaster,Standard,,
+29,Dublin,Standard,,
+30,Belfast,Standard,,
+31,Newcastle,Pop-up,2022-05-08,15.0
+32,Bournemouth,Pop-up,2022-04-15,15.0
+33,Birmingham,Pop-up,2022-03-31,50.0
+34,Nice,Pop-up,2022-09-17,20.0
+35,New York,Standard,,
+36,New York,Standard,,
+37,New York,Standard,,
+38,Maastricht,Pop-up,2022-01-29,20

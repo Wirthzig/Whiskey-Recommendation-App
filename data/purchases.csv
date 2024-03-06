@@ -1,0 +1,64 @@
+customer_id,date,distillery,whiskey,recommended
+0,2022-01-25,test-distillery,test-whiskey,no
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-26,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-27,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-27,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",no
+44,2022-01-27,Macallan,"The Macallan 29 year old 1976 Vintage (Cask #11354), 45.4%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Glenlivet,"Glenlivet Cellar Collection 1969 vintage, 50.8%",yes
+1,2022-01-27,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-27,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+33,2022-01-27,Macallan,"The Macallan 29 year old 1976 Vintage (Cask #11354), 45.4%",yes
+33,2022-01-27,Macallan,"The Macallan 29 year old 1976 Vintage (Cask #11354), 45.4%",yes
+1,2022-01-27,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-27,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+1,2022-01-27,Bowmore,"Black Bowmore 42 year old 1964 vintage, 40.5%",yes
+49,2022-01-28,Bowmore,"Gold Bowmore 1964 vintage, 42.4% ",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no
+49,2022-01-28,Glenfarclas,"Glenfarclas Family Casks 1954 (Cask #1260), 47.2%",no

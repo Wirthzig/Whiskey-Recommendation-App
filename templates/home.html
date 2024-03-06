@@ -1,0 +1,18 @@
+{% extends "layouts/main.html" %}
+{% block content %}
+    <div style="height: 100vh; margin-top: 20vh;" class="container">
+        <div class="row">
+            <div class="six columns">
+                <form action="/employee">
+                    <input style="height: 40vh" class="u-full-width" type="submit" value="Log in as Shop-Employee" />
+                </form>
+            </div>
+            <div class="six columns">
+                <form action="/manager">
+                    <input  style="height: 40vh" class="u-full-width" type="submit"
+                           value="Log in as Manager" />
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,197 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+    <datalist id="distillery_list">
+    {% for distillery in distilleries %}
+         <option value="{{ distillery }}">
+    {% endfor %}
+    </datalist>
+
+
+    <h2 style="text-align: center">Logged in as <strong>Manager</strong></h2><br>
+    <div class="row">
+        <div class="six columns">
+            <div class="form">
+                <h4>Register Customer</h4>
+                <form action="/manager/register_customer" method="get">
+                        <label for="favourite">Favourite Distillery: </label>
+                        <input list=distillery_list class="u-full-width" type="text" name="favourite" id="favourite"
+                               value=""/>
+                        <br><input class="button-primary" type="submit" value="Send request!" />
+                </form>
+            </div>
+        </div>
+        <div class="six columns">
+            <div class="form">
+                <h4>Delete Customer</h4>
+                <form action="/manager/delete_customer" method="get">
+                    <label for="customer_id">Customer_ID: </label>
+                    <input class="u-full-width" type="text" name="customer_id" id="customer_id" value="" required/>
+                    <br><input class="button-primary" type="submit" value="Send request!" />
+                </form>
+            </div>
+        </div>
+    </div>
+        <br><br>
+
+    <div class="form">
+        <h4>Add Shop</h4>
+        <form action="/manager/add_shop" method="get">
+            <label for="location">Location: </label>
+            <input class="u-full-width" type="text" name="location" id="location" value="" required/>
+            <br>
+            <label for="distilleries">Distilleries: </label>
+            <br>
+            <div style="-webkit-column-count: 4; -moz-column-count: 4; column-count: 4;">
+                <!-- This style design was
+                found on https://stackoverflow
+                .com/questions/20027595/grouping-checkboxes-css-in-multiple-column-layout -->
+
+                {% for distillery in distilleries %}
+                    <label for="distilleries"><input style="margin-bottom: 0px" type="checkbox" name="distilleries"
+                                                     value="{{ distillery }}" id="distilleries"/> {{ distillery }}</label>
+                {% endfor %}
+            </div>
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+    </div>
+        <br><br>
+
+    <div class="form">
+        <h4>Add Pop-Up</h4>
+        <form action="/manager/add_popup" method="get">
+            <div class="row">
+                <div class="four columns">
+                    <label for="location">Location: </label>
+                    <input class="u-full-width" type="text" name="location" id="location" value="" required/>
+                </div>
+                <div class="four columns">
+                    <label for="date">Date: </label>
+                    <input class="u-full-width" type="date" name="date" id="date" value="" required/>
+                </div>
+                <div class="four columns">
+                    <label for="discount">Discount: </label>
+                    <input class="u-full-width" type="text" name="discount" id="discount" value="" required/>
+                </div>
+            </div>
+            <br>
+            <label for="distilleries">Distilleries: </label>
+            <br>
+            <div class="row">
+                <div class="four columns">
+                    <input list=distillery_list class="u-full-width" type="text" name="distilleries" id="distilleries"
+                           value="" required/>
+                </div>
+                <div class="four columns">
+                    <input list=distillery_list class="u-full-width" type="text" name="distilleries" id="distilleries" value=""/>
+                </div>
+                <div class="four columns">
+                    <input list=distillery_list class="u-full-width" type="text" name="distilleries" id="distilleries" value=""/>
+                </div>
+            </div>
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+    </div>
+        <br><br>
+    <div class="form">
+        <h4>Delete Shop</h4>
+        <form action="/manager/delete_shop" method="get">
+            <label for="shop_id">Shop ID: </label>
+            <input class="u-full-width" type="text" name="shop_id" id="shop_id" value="" required/>
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+    </div>
+        <br><br>
+    <div class="form">
+        <h4>Add Distillery With Tastes</h4>
+        <form action="/manager/add_distillery" method="get">
+            <label for="distillery">Distillery: </label>
+            <input class="u-full-width" type="text" name="distillery" id="distillery" value="" required/>
+            <div class="row">
+                {% for taste in ["Body","Sweetness","Smoky","Medicinal","Tobacco","Honey"] %}
+                    <div class="two columns">
+                        <label for="taste_list">{{ taste }}:</label>
+                        <select name="taste_list" id="taste_list">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                {% for taste in ["Spicy","Winey","Nutty","Malty","Fruity","Floral"] %}
+                    <div class="two columns">
+                        <label for="taste_list">{{ taste }}:</label>
+                        <select name="taste_list" id="taste_list">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                {% endfor %}
+            </div>
+            <label for="postcode">Postcode: </label>
+            <input class="u-full-width" type="text" name="postcode" id="postcode" value="">
+            <div class="row">
+                <div class="six columns">
+                    <label for="latitude">Latitude: </label>
+                    <input class="u-full-width" type="text" name="latitude" id="latitude" value="">
+                </div>
+                <div class="six columns">
+                    <label for="longitude">Longitude: </label>
+                    <input class="u-full-width" type="text" name="longitude" id="longitude" value="">
+                </div>
+            </div>
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+    </div>
+        <br><br>
+    <div class="form">
+        <h4>Add Whiskey With Review</h4>
+        <form action="/manager/add_review" method="get">
+             <div class="row">
+                 <div class="four columns">
+                    <label for="distillery">Distillery: </label>
+                    <input list="distillery_list" class="u-full-width" type="text" name="distillery" id="distillery"
+                           value="" required/>
+                 </div>
+                 <div class="four columns">
+                    <label for="name">Name: </label>
+                    <input class="u-full-width" type="text" name="name" id="name" value="" required/>
+                 </div>
+                <div class="four columns">
+                    <label for="category">Category: </label>
+                    <input class="u-full-width" type="text" name="category" id="category" value="" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <label for="points">Points: </label>
+                    <input class="u-full-width" type="text" name="points" id="points" value="" required/>
+                </div>
+                <div class="four columns">
+                    <label for="price">Price: </label>
+                    <input class="u-full-width" type="text" name="price" id="price" value="" required/>
+                </div>
+                <div class="four columns">
+                    <label for="currency">Currency:</label>
+                    <select class="u-full-width" name="currency" id="currency">
+                        <option value="$">$</option>
+                        <option value="€">€</option>
+                    </select>
+                </div>
+            </div>
+            <label for="description">Description/Review:</label>
+            <textarea class="u-full-width" id="description" name="description"></textarea>
+
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+    </div>
+
+{% endblock %}

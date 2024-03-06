@@ -1,0 +1,144 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+    <datalist id="distillery_list">
+    {% for distillery in distilleries %}
+         <option value="{{ distillery }}">
+    {% endfor %}
+    </datalist>
+
+    <datalist id="whiskey_list">
+    {% for whiskey in whiskeys %}
+         <option value="{{ whiskey }}">
+    {% endfor %}
+    </datalist>
+
+    <h2 style="text-align: center">Logged in as <strong>Shop-Employee</strong></h2><br>
+    <div class="form">
+        <h4>Register Purchase</h4>
+        <form action="/employee/register_purchase" method="get">
+            <label for="customer_id">Customer_ID: </label>
+            <input class="u-full-width" type="text" name="customer_id" id="customer_id" value="" required/>
+
+            <div class="row">
+                <div class="six columns">
+                    <label for="whiskey">Whiskey: </label>
+                    <input class="u-full-width" list=whiskey_list type="text" name="whiskey" id="whiskey" value="" required/>
+                </div>
+                <div class="six columns">
+                    <label>Recommended: </label>
+                    <select class="u-full-width" name="recommended" id="recommended">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+    </div>
+        <br><br>
+
+    <div class="form">
+        <h3>Get Customer Information</h3>
+        <form action="/employee/get_customer" method="get">
+            <label for="customer_id">Customer ID: </label>
+            <input class="u-full-width" type="text" name="customer_id" id="customer_id" value="" required/>
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+    </div>
+        <br><br>
+
+    <div class="row">
+        <div class="six columns">
+            <div class="form">
+                <h4>Add Favourite Distillery</h4>
+                <form action="/employee/put_favourite" method="get">
+                    <div class="row">
+                        <div class="six columns">
+                            <label for="customer_id">Customer_ID: </label>
+                            <input class="u-full-width" type="text" name="customer_id" id="customer_id" value="" required/>
+                        </div>
+                         <div class="six columns">
+                            <label for="favourite">Favourite Distillery: </label>
+                            <input class="u-full-width" list=distillery_list type="text" name="favourite" id="favourite" value="" required/>
+                         </div>
+                    </div>
+                    <input class="button-primary" type="submit" value="Send request!"/>
+                </form>
+            </div>
+        </div>
+        <div class="six columns">
+            <div class="form">
+                <h4>Delete Favourite Distillery</h4>
+                <form action="/employee/delete_favourite" method="get">
+                    <label for="customer_id">Customer_ID: </label>
+                    <input class="u-full-width" type="text" name="customer_id" id="customer_id" value="" required/>
+                    <br><input class="button-primary" type="submit" value="Send request!" />
+                </form>
+            </div>
+        </div>
+    </div>
+            <br><br>
+
+    <div id="recommend" class="form">
+        <h4>Recommend</h4>
+        <form action="/employee#recommend"method="get">
+            <label for="customer_id">Customer ID: </label>
+            <input class="u-full-width" type="text" name="customer_id" id="customer_id",
+                   value="{% if customer_id != None %}{{ customer_id }}{% endif %}"/>
+            {% if purchases_list != None: %}
+            <label for="customer_id">The last purchases were: </label>
+                {% for purchase in purchases_list %}
+                    <div>{{ purchase }}</div>
+                {% endfor %}
+            {% endif %}
+            {% if customer_id != None and purchases_list == None: %}
+                <div>Customer with ID {{ customer_id }} has not made a purchase yet or is not registered.</div>
+            {% endif %}
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+        <form action="/employee/recommend" method="get">
+            <label for="customer_id">Customer ID: </label>
+            <input class="u-full-width" type="text" name="customer_id" id="customer_id" value="{% if customer_id != None %}{{ customer_id }}{% endif %}"/>
+            <label for="shop_id">Shop ID: </label>
+            <input class="u-full-width" type="text" name="shop_id" id="shop_id" required/>
+            <label for="distilleries">Favourite Whiskey: </label>
+            <input list=distillery_list class="u-full-width" type="text" name="distilleries" id="distilleries" value=""/>
+            <label for="distilleries">Liked Whiskey: </label>
+            <input list=distillery_list class="u-full-width" type="text" name="distilleries" id="distilleries" value=""/>
+            <label for="distilleries">Liked Whiskey: </label>
+            <input list=distillery_list class="u-full-width" type="text" name="distilleries" id="distilleries" value=""/>
+            <label for="distilleries">Tried Whiskey: </label>
+            <input list=distillery_list class="u-full-width" type="text" name="distilleries" id="distilleries" value=""/>
+            <label for="distilleries">Tried Whiskey: </label>
+            <input list=distillery_list class="u-full-width" type="text" name="distilleries" id="distilleries" value=""/>
+            <br><input class="button-primary" type="submit" value="Send request!" />
+        </form>
+    </div>
+        <br><br>
+
+    <div class="row">
+        <div class="six columns">
+            <div class="form">
+                <h3>Get Pop-Up</h3>
+                <form action="/employee/get_popup" method="get">
+                    <label for="customer_id">Customer ID: </label>
+                    <input class="u-full-width" type="text" name="customer_id" id="customer_id" value="" required/>
+                    <br><input class="button-primary" type="submit" value="Send request!" />
+                </form>
+            </div>
+        </div>
+        <div class="six columns">
+            <div class="form">
+                <h3>Get Whiskey Review</h3>
+                <form action="/employee/get_review" method="get">
+                    <label for="whiskey">Whiskey: </label>
+                    <input class="u-full-width" list=whiskey_list type="text" name="whiskey" id="whiskey" value=""
+                           required/>
+                    <br><input class="button-primary" type="submit" value="Send request!" />
+                </form>
+            </div>
+        </div>
+    </div>
+        <br><br>
+{% endblock %}
