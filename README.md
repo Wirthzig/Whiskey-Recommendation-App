@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 
-This application is a work by Agnes Turko - i6240438, Robin Steinkühler - i6265070 and Alexander Wirths - i6264519
-It is the final project of the Course Python and Web Design - EBS2070 (Maastricht University), by Rui Jorge Almeida.
+This is a backup repo for the final project of the Course Python and Web Design - EBS2070 (Maastricht University).
+It is a flask-web application with different functionalities for an online whiskey shop, including a recommendation system for whiskey brands.
 
 ------------------------------------------------------------------------------------------------------------------------
 
